@@ -7,5 +7,5 @@ public interface AccountService {
 
   Account Signin(String username, String password);
 
-  Account Signup(String username, String password);
+  Account Signup(String username, String password, String role);
 }

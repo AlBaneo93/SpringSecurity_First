@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,5 +8,12 @@
 <h1>Welcome</h1>
 <a href="hello">hello</a>
 <a href="my">my Page</a>
+<a href="signup">SignUP</a>
+<br/>
+<!--thymleaf에서 jstl과 같이 사용하기-->
+<h3><span th:text="${session.greeting}"></span></h3>
+<div>
+    <a href="/signout">로그 아웃</a>
+</div>
 </body>
 </html>
